@@ -6,14 +6,21 @@
   <title>Fast, Local Marketing Support — Family-Owned • Latino Heritage</title>
   <meta name="description" content="Fast, local, family-owned marketing support with Latino heritage. Book time on our calendar and let's move your brand forward.">
   <meta name="theme-color" content="#111827">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Fast, Local Marketing Support — Family-Owned • Latino Heritage">
   <meta property="og:description" content="Fast, local, family-owned marketing support with Latino heritage. Book time on our calendar.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og-image.png">
+
+  <!-- Favicons -->
   <link rel="icon" href="assets/favicon.ico">
-  <link rel="preconnect" href="https://assets.calendly.com">
+
+  <!-- Styles & Scripts -->
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,7 +31,10 @@
     "areaServed": "Local",
     "url": "https://your-domain.github.io/",
     "sameAs": [],
-    "founder": "Family Owned",
+    "founder": {
+      "@type": "Organization",
+      "name": "Family Owned"
+    },
     "openingHours": "Mo-Fr 09:00-17:00",
     "slogan": "Fast. Local. Hecho con corazón."
   }
@@ -46,6 +56,7 @@
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
@@ -56,7 +67,7 @@
             <strong>fast, local</strong> service that keeps your brand moving forward.
           </p>
           <div class="cta-row">
-            <a id="book-now" href="#" class="btn btn--primary">Book on our calendar</a>
+            <a id="book-now" href="#book" class="btn btn--primary">Book on our calendar</a>
             <a href="#why" class="btn btn--ghost">Why choose us?</a>
           </div>
           <ul class="badges" aria-label="Highlights">
@@ -66,10 +77,13 @@
           </ul>
           <p class="subtle">¿Hablas español? <span class="accent">¡También nosotros!</span> Reserva tu cita en minutos.</p>
         </div>
-        <div class="hero__card"><img src="assets/scheduling-card.png" alt="Instant scheduling illustration" style="max-width:100%;border-radius:16px;border:1px solid var(--border)"></div></div>
+        <div class="hero__card">
+          <img src="assets/scheduling-card.png" alt="Instant scheduling illustration" style="max-width:100%;border-radius:16px;border:1px solid var(--border)">
+        </div>
       </div>
     </section>
 
+    <!-- Why Section -->
     <section id="why" class="section">
       <div class="container">
         <h2>Why local, why now?</h2>
@@ -84,12 +98,13 @@
           </div>
           <div class="card">
             <h3>Fast & Local</h3>
-            <p>We’re nearby and responsive. Same‑week starts and clear next steps after every call.</p>
+            <p>We’re nearby and responsive. Same-week starts and clear next steps after every call.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="section section--alt">
       <div class="container">
         <h2>What we can do together</h2>
@@ -110,36 +125,42 @@
       </div>
     </section>
 
+    <!-- Book Section -->
     <section id="book" class="section">
       <div class="container">
         <h2>Book your time</h2>
         <p>Choose a slot below. You’ll get a calendar invite instantly.</p>
 
         <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="" style="min-width:320px;height:700px;"></div>
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/your-handle/intro-call" 
+             style="min-width:320px;height:700px;">
+        </div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         <!-- Calendly inline widget end -->
 
         <noscript>
-          <p>Calendly requires JavaScript. You can also book here: <a id="calendly-fallback" href="#" rel="nofollow">Book on Calendly</a>.</p>
+          <p>Calendly requires JavaScript. You can also book here: 
+            <a id="calendly-fallback" href="https://calendly.com/your-handle/intro-call" rel="nofollow">Book on Calendly</a>.
+          </p>
         </noscript>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>Family‑Owned • Latino Heritage • Fast & Local</p>
+      <p>Family-Owned • Latino Heritage • Fast & Local</p>
       <p>&copy; <span id="year"></span> Your Business. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Optional: Calendly popup widget (triggered by CTA) -->
+  <!-- Site Config -->
   <script>
     window.SITE_CONFIG = {
       calendlyUrl: "https://calendly.com/your-handle/intro-call"
     };
   </script>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
