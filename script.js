@@ -1,7 +1,7 @@
 // Simple JS to wire Calendly URL + year + popup widget + mobile menu toggle
 (function(){
   const cfg = window.SITE_CONFIG || {};
-  const url = cfg.calendlyUrl || "https://calendly.com/your-handle/intro-call";
+  const url = cfg.calendlyUrl || "https://calendly.com/hgplumbingmarketing/30min";
 
   // Update inline widget if present
   const inline = document.querySelector(".calendly-inline-widget");
