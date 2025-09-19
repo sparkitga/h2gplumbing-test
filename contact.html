@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Fast, Local Marketing Support</title>
+  <meta name="description" content="Contact us today for fast, local, family-owned marketing support with Latino heritage.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Brand logo" width="36" height="36" />
+        <span>Fast, Local Support</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn btn--small btn--active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--contact">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Let’s move your brand forward</h1>
+          <p class="lead">Family-owned. Latino heritage. Fast, local support—hecho con corazón.</p>
+          <p class="subtle">Choose the easiest way to connect below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section">
+      <div class="container grid-3">
+        <div class="card contact-card">
+          <h3>Email Us</h3>
+          <p><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+        </div>
+        <div class="card contact-card">
+          <h3>Call Us</h3>
+          <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+        </div>
+        <div class="card contact-card">
+          <h3>Visit Us</h3>
+          <p>123 Local Street<br>Atlanta, GA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendly Section -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2>Book a time that works for you</h2>
+        <p>You’ll get a calendar invite instantly.</p>
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/your-handle/intro-call"
+             style="min-width:320px;height:700px;">
+        </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </section>
+
+    <!-- Fallback Contact Form -->
+    <section class="section">
+      <div class="container">
+        <h2>Prefer a quick message?</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+          <label>
+            Your Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Your Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Family-Owned • Latino Heritage • Fast & Local</p>
+      <p>&copy; <span id="year"></span> Your Business. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

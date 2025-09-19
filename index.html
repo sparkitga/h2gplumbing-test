@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fast, Local Plumbing • Family-Owned • Latino Heritage</title>
+  <meta name="description" content="Fast, local, family-owned plumbing support with Latino heritage. Book time on our calendar and let's move your family forward.">
+  <meta name="theme-color" content="#111827">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fast, Local Plumbing — Family-Owned • Latino Heritage">
+  <meta property="og:description" content="Fast, local, family-owned plumbing support with Latino heritage. Book time on our calendar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@type": "LocalBusiness",
+    "name": "Local Plumbing",
+    "description": "Family-owned plumbing support with Latino heritage. Fast, local, and people-first.",
+    "areaServed": "Local",
+    "url": "https://h2gplumbing.com/",
+    "sameAs": [],
+      "@type": "Organization",
+      "name": "Family Owned"
+    },
+    "openingHours": "Mo-Fr 09:00-5:00",
+    "slogan": "Fast. Local. Hecho con corazón."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <span>Fast, Local Support</span>
+      </a>
+      <nav class="nav">
+        <a href="#why">Why Us</a>
+        <a href="#services">Services</a>
+        <a href="#book" class="btn btn--small">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Move faster with <span class="accent">local, family-owned</span> plumbing support</h1>
+          <p class="tagline"><strong>Running Water. Real People.</strong></p>
+          <p class="lead">
+            We’re a <strong>Latino-heritage</strong>, family-owned team delivering
+            <strong>fast, local</strong> service that keeps your family moving forward.
+          </p>
+          <div class="cta-row">
+            <a id="book-now" href="#book" class="btn btn--primary">Book on our calendar</a>
+            <a href="#why" class="btn btn--ghost">Why choose us?</a>
+          </div>
+          <ul class="badges" aria-label="Highlights">
+            <li class="badge">Family-Owned</li>
+            <li class="badge">Latino Heritage</li>
+            <li class="badge">Fast & Local</li>
+          </ul>
+          <p class="subtle">¿Hablas español? <span class="accent">¡También nosotros!</span> Reserva tu cita en minutos.</p>
+        </div>
+        <div class="hero__card">
+          <img src="assets/scheduling-card.png" alt="Instant scheduling illustration" style="max-width:100%;border-radius:16px;border:1px solid var(--border)">
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why local, why now?</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Family-Owned</h3>
+            <p>Real people, real care. We treat your business like it’s our own—con corazón.</p>
+          </div>
+          <div class="card">
+            <h3>Latino Heritage</h3>
+            <p>We honor nuestra cultura with service, respect, and excellence—building bridges with every project.</p>
+          </div>
+          <div class="card">
+            <h3>Fast & Local</h3>
+            <p>We’re nearby and responsive. Same-week starts and clear next steps after every call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section--alt">
+      <div class="container">
+        <h2>What we can do together</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Plumbing</h3>
+            <p>Repair, Installation, & Replacement</p>
+          </div>
+          <div class="card">
+            <h3>Drain Services</h3>
+            <p>Drain Cleaning, Sewer Cleaning, & Drain Repair</p>
+          </div>
+          <div class="card">
+            <h3>Water Services</h3>
+            <p>Hot Water, Heating Repair, & Replacement</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="section">
+      <div class="container">
+        <h2>Book your time</h2>
+        <p>Choose a slot below. You’ll get a calendar invite instantly.</p>
+
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/hgplumbingmarketing/30min" 
+             style="min-width:320px;height:700px;">
+        </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+
+        <noscript>
+          <p>Calendly requires JavaScript. You can also book here: 
+            <a id="calendly-fallback" href="https://calendly.com/hgplumbingmarketing/30min" rel="nofollow">Book on Calendly</a>.
+          </p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Family-Owned • Latino Heritage • Fast & Local</p>
+      <p>&copy; <span id="year"></span> H2G Plumbing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Site Config -->
+  <script>
+    window.SITE_CONFIG = {
+      calendlyUrl: "https://calendly.com/hgplumbingmarketing/30min"
+    };
+  </script>
+</body>
+</html>
